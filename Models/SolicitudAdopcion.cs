@@ -22,11 +22,24 @@ namespace PC3_SIMULACRO.Models
             set;
         }
 
-        [Required]
         public string Descripcion{
             get;
             set;
         }
+
+        [Required]
+        public string Celular{
+            get;
+            set;
+        }
+
+        [EmailAddress]
+        [Required]
+        public string Email{
+            get;
+            set;
+        }
+  
         
     }
 }

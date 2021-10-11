@@ -43,4 +43,8 @@ C:\Users\Soporte\OneDrive\Documents\PC3_SIMULACRO\bin\Debug\net5.0\Microsoft.Ent
 C:\Users\Soporte\OneDrive\Documents\PC3_SIMULACRO\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Soporte\OneDrive\Documents\PC3_SIMULACRO\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Soporte\OneDrive\Documents\PC3_SIMULACRO\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Soporte\OneDrive\Documents\PC3_SIMULACRO\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Soporte\OneDrive\Documents\PC3_SIMULACRO\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Soporte\OneDrive\Documents\PC3_SIMULACRO\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Soporte\OneDrive\Documents\PC3_SIMULACRO\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Soporte\OneDrive\Documents\PC3_SIMULACRO\bin\Debug\net5.0\MySqlConnector.dll
+C:\Users\Soporte\OneDrive\Documents\PC3_SIMULACRO\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll

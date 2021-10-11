@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-
+using PC3_SIMULACRO.Data;
 
 namespace PC3_SIMULACRO
 {
@@ -26,7 +26,11 @@ namespace PC3_SIMULACRO
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<Data.AdopcionContext>(options => options.UseInMemoryDatabase("AdopcionBD"));
+
+             var connectionString = "server=localhost;user=root;password=;database=adopcion";
+            var serverVersion = ServerVersion.AutoDetect(connectionString);
+           
+            services.AddDbContext<Data.AdopcionContext>(options => options.UseMySql(connectionString, serverVersion));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +43,8 @@ namespace PC3_SIMULACRO
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+              
+              
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
