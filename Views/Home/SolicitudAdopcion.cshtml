@@ -1,0 +1,33 @@
+@model SolicitudAdopcion //Invocación de la clase
+
+@{
+    ViewData["Title"]="Solicitud de Adopción";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div asp-validation-summary="All" class="text-danger" ></div>
+
+<form method="post">
+
+    <div class="form-group">
+        <label asp-for="NombreCompleto">Nombre Completo:</label>
+        <input asp-for="NombreCompleto" class="form-control">
+        <span asp-validation-for="NombreCompleto" class="text-danger"></span> 
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Direccion">Direccion:</label>
+        <input asp-for="Direccion" class="form-control">
+         <span asp-validation-for="Direccion" class="text-danger"></span> 
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Descripcion">Descripcion:</label>
+        <textarea asp-for="Descripcion" cols="30" rows="10" class="form-control"></textarea>
+         <span asp-validation-for="Descripcion" class="text-danger"></span> 
+    </div>
+
+<button class="btn btn-danger">ENVIAR</button>
+
+</form>
